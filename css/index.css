@@ -1,0 +1,65 @@
+body{
+	/*background-image: url(../images/12.jpg);
+	background-repeat: repeat;
+	background-position: 0 100px;*/
+	background-color: #F3F3F3;
+}
+.navbar-brand{
+	font-size: 27px;
+    font-family: cursive;
+}
+img{
+	width: 100%;
+}
+.card-wrap{
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+  transition: all 0.5s ease;
+  background: white;
+}
+.desc-wrap{
+	padding: 14px;
+	position: relative;
+}
+.description{
+	font-size: 16px;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.org-name{
+	color: grey;
+	font-size: 13px;
+}
+.card-wrap:hover{
+	/*opacity: 0.5;*/
+}
+.card-wrap:hover .desc-wrap:before{
+	content: '';
+  position: absolute;
+  border-bottom: 2px solid red;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.head-link{
+	padding: 10px;
+	background: #F7F5F5;
+	/*border-radius: 4px;*/
+}
+.head-link:hover, .head-link:active, .head-link:visited, .head-link:focus{
+	text-decoration: none;
+	border-bottom: 2px solid red;
+	
+}
+.footer{
+	background: #000000;
+}
+
+/*media query*/
+@media (min-width: 1200px){
+	.container {
+	    width: 970px;
+	}
+}
