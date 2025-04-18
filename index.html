@@ -5,254 +5,661 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <META content="satyapriya subudhi, satyapriya, Front-end developer" name=keywords>
+    <META content="Satyapriya subudhi, Satyapriya, Front-end developer" name=keywords>
     <META content="satyapriya subudhi" name=description>
-    <meta name="author" content="subudhisatyapriya@gmail.com">
-    <title>satyapriya</title>
-    <!-- Bootstrap core CSS -->
+    <meta name="author" content="ssubudhi15@gmail.com">
+    <title>Satyapriya</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <script src="js/fontawesome.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114520711-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-114520711-1');
-    </script>
 </head>
 
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-               <div class="my-name">Satyapriya Subudhi</div>
+    <div id="header">
+        <nav class="header--navbar">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar-header">
+                        <div class="header--custom-btn hidden-lg hidden-md"> <a href="#hireMeModal" class="btn--default"
+                                data-toggle="modal"><i class="fa fa-user-plus"></i></a> </div><button type="button"
+                            class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav"
+                            aria-expanded="false" aria-controls="headerNav"> <span class="sr-only">Toggle
+                                navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                                class="icon-bar"></span> </button> <a class="logo navbar-brand" href="#">
+                            <div class="logo--img"> <img src="./images/profile-img.png" class="img-responsive" alt=""
+                                    width="50" height="50"> </div>
+                            <div class="logo--content">
+                                <h1>S <strong>Subudhi</strong></h1>
+                                <p><strong>Mobile</strong> Architect</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="headerNav" class="header--nav navbar-collapse collapse" aria-expanded="false"
+                        style="height: 0px;">
+                        <ul class="nav navbar-nav navbar-right AnimateScroll">
+                            <li class="active"><a href="#banner">HOME</a></li>
+                            <li class=""><a href="#about">ABOUT</a></li>
+                            <li class=""><a href="#services">SERVICES</a></li>
+                            <li class=""><a href="#gallery">WORKS</a></li>
+                            <li class=""><a href="#feedback">FEEDBACK</a></li>
+                            <li class=""><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <a href="#home" class="head-link">Home</a>
+        </nav>
+    </div>
+    <section class="top-section" id="banner">
+        <div class="slider">
+            <div>
+                <img src="./images/banner1.jpg" />
+                <div class="container slider-content1">
+                    <div class="vc--parent">
+                        <div class="vc--child">
+                            <div class="banner--content banner--content-left">
+                                <h2>Let's <span class="thick">Build</span> Something <span class="thick">Great</span>
+                                    Together</h2>
+                                <p>I'm a web developer based in <a href="https://en.wikipedia.org/wiki/India"
+                                        target="_blank"><strong>#India</strong></a>. I make the visual for web and
+                                    mobile application to be more interactive</p><a href="#contact"
+                                    class="btn--default AnimateScrollLink">LET'S TALK</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <a href="#my-work" class="head-link">My Work</a>
-                    </div>
-                    <div class="form-group">
-                        <a href="#contact-me" class="head-link">Contact Me</a>
-                    </div>
-                </form>
+                </div>
             </div>
-            <!--/.navbar-collapse -->
+            <div>
+                <img src="/images/banner2.jpg" />
+                <div class="container slider-content2">
+                    <div class="vc--parent">
+                        <div class="vc--child">
+                            <div class="row">
+                                <div class="banner--content text-center col-md-8 col-md-offset-2">
+                                    <h2>Let's <span class="thick">Build</span> Something <span
+                                            class="thick">Great</span> Together</h2>
+                                    <p>I'm the pixel crafter based in <a href="https://en.wikipedia.org/wiki/India"
+                                            target="_blank"><strong>#India</strong></a>. I make the visual for web
+                                        and mobile application to be more interactive</p><a href="#contact"
+                                        class="btn--default AnimateScrollLink">LET'S TALK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="/images/banner3.jpg" />
+            </div>
         </div>
-    </nav>
-    <section class="top-section" id="home">
-        <div class="title">
-            <div class="profile-pic">
-                <img src="images/profile.jpg">
-            </div>
-             <!-- <div class="my-name">Satyapriya Subudhi</div> -->
-            <div class="anim-text">I am a Developer</div>
-            <div class="all-work-logo-wrap">
-                <i class="work-logo-wrap node" title="angularJs">
-                    <img src="images/angular.png">
-                </i>
-                 <i class="work-logo-wrap node" title="html5">
-                    <img src="images/html.png">
-                </i>
-                 <i class="work-logo-wrap node" title="nodejs">
-                    <img src="images/nodejs.png">
-                </i>
-                 <i class="work-logo-wrap node" title="ruby">
-                    <img src="images/ruby.png">
-                </i>
-            </div>
-        </div>
+
         <div class="arrow bounce">
             <a href="#my-work" class="">
                 <i class="fa fa-angle-down"></i>
             </a>
         </div>
     </section>
-    <section id="my-work">
+
+    <div id="about">
+        <div class="container">
+            <div class="section--title">
+                <h2><strong>ABOUT ME</strong></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>WHO <strong>AM I</strong>?</h3>
+                    <p>I am a passionate and dedicated mobile app developer with a flair for innovation and a keen eye
+                        for detail. With extensive experience in creating user-friendly, visually appealing, and
+                        high-performing apps, I strive to bring your vision to life.</p>
+                    <p> My commitment to excellence, clear communication, and understanding of client needs ensure a
+                        seamless development process. Let's collaborate to build exceptional apps that exceed
+                        expectations and drive success.</p><a href="#" class="btn btn--primary" download="">DOWNLOAD MY
+                        CV</a>
+                </div>
+                <div class="col-md-6">
+                    <h3>EXPERT <strong>IN</strong></h3>
+                    <p>I create innovative, user-friendly mobile apps with top-notch functionality and technologies</p>
+                    <div class="about--progress-items">
+                        <h4>React</h4>
+                        <div class="progress">
+                            <div class="progress-bar" data-progress="80" style="width: 60%;"><span>80%</span></div>
+                        </div>
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div class="progress-bar" data-progress="90" style="width: 90%;"><span>90%</span></div>
+                        </div>
+                        <h4>Node</h4>
+                        <div class="progress">
+                            <div class="progress-bar" data-progress="70" style="width: 70%;"><span>70%</span></div>
+                        </div>
+                        <h4>React Native</h4>
+                        <div class="progress">
+                            <div class="progress-bar" data-progress="60" style="width: 60%;"><span>50%</span></div>
+                        </div>
+                        <h4>Angular</h4>
+                        <div class="progress">
+                            <div class="progress-bar" data-progress="50" style="width: 50%;"><span>50%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about--info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about--info-wrapper">
+                            <h3><strong>EDU</strong>CATION</h3>
+                            <div class="about--info-item">
+                                <div class="row reset-gutter">
+                                    <div class="col-xs-4">
+                                        <p>2002-2004</p>
+                                        <h5><strong>CHSE, ODISHA</strong></h5>
+                                    </div>
+                                    <div class="col-xs-8 about--info-border">
+                                        <h4><strong>INTERMEDIATE(12TH)</strong></h4>
+                                        <p>Completed Intermediate Science from Prananath college, Khordha, Odisha</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about--info-item">
+                                <div class="row reset-gutter">
+                                    <div class="col-xs-4">
+                                        <p>2004-2007</p>
+                                        <h5><strong>UTKAL UNIVERSITY</strong></h5>
+                                    </div>
+                                    <div class="col-xs-8 about--info-border">
+                                        <h4><strong>BACHELOR</strong> OF SCIENCE</h4>
+                                        <p>Completed Bachelor of Science from Utkal University, Bhubaneswar, Odisha</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about--info-item">
+                                <div class="row reset-gutter">
+                                    <div class="col-xs-4">
+                                        <p>2008-2011</p>
+                                        <h5><strong>BERHAMPUR UNIVERSITY</strong></h5>
+                                    </div>
+                                    <div class="col-xs-8 about--info-border">
+                                        <h4><strong>MCA</strong></h4>
+                                        <p>Completed Master of Computer Application from Berhampur University, Odisha
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about--info-wrapper">
+                            <h3><strong>EX</strong>PERIENCE</h3>
+                            <div class="about--info-item">
+                                <div class="row reset-gutter">
+                                    <div class="col-xs-4">
+                                        <p>2012-2015</p>
+                                        <h5><strong>FREEWATE TECH SOLUTION PVT. LTD.</strong></h5>
+                                    </div>
+                                    <div class="col-xs-8 about--info-border">
+                                        <h4><strong>FRONT-END</strong> DEVELOPER</h4>
+                                        <p>Developed web and mobile apps using angular and ruby on rails</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about--info-item">
+                                <div class="row reset-gutter">
+                                    <div class="col-xs-4">
+                                        <p>2015-2018</p>
+                                        <h5><strong>TATA CLASSEDGE</strong></h5>
+                                    </div>
+                                    <div class="col-xs-8 about--info-border">
+                                        <h4><strong>SENIOR FRONT-END</strong> DEVELOPER</h4>
+                                        <p>Developing mobile apps using Angular</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about--info-item">
+                                <div class="row reset-gutter">
+                                    <div class="col-xs-4">
+                                        <p>2018-Present</p>
+                                        <h5><strong>Dure Technologies Pvt. Ltd.</strong></h5>
+                                    </div>
+                                    <div class="col-xs-8 about--info-border">
+                                        <h4><strong>APPLICATION</strong> ARCHITECT</h4>
+                                        <p>Developing mobile apps using React, Cordova, Firebase, Node, React Native</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="parallax-window bg--overlay bg--img" data-parallax="scroll"
+        data-image-src="images/service-img.jpg">
+        <div class="container">
+            <div class="section--title">
+                <h2><strong>WHAT I DO</strong></h2>
+            </div>
+            <div class="row row-eq-height">
+                <div class="col-md-6 col-sm-6 service--item">
+                    <div class="service--icon"> <i class="fa fa-laptop"></i> </div>
+                    <div class="service--content">
+                        <h2>Architectural <strong>Design & Development </strong></h2>
+                        <p>Design the app architecture, including frontend, backend, and API integration.
+                            Choose between native (iOS/Android), cross-platform (Flutter, React Native), or hybrid
+                            development approaches.<br>
+                            Define the MVC, MVVM, MVP, or Clean Architecture pattern for maintainability.
+                            Establish guidelines for modular, reusable, and scalable code.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 service--item">
+                    <div class="service--icon"> <i class="fa fa-object-group"></i> </div>
+                    <div class="service--content">
+                        <h2> <strong>BACKEND</strong> SERVICES</h2>
+                        <p>Develop backend services using Node.js for scalable server-side logic.<br>
+                            Integrate Firebase for real-time database, authentication, and cloud functions.<br>
+                            Ensure secure API development with optimized performance and scalability.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 service--item">
+                    <div class="service--icon"> <i class="fa fa-mobile"></i> </div>
+                    <div class="service--content">
+                        <h2>MOBILE <strong>APP</strong> DESIGN</h2>
+                        <p>Create mobile app UI/UX designs using Figma for a seamless user experience.<br>
+                            Develop interactive prototypes and wireframes for better visualization.<br>
+                            Collaborate with developers to ensure accurate design implementation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 service--item">
+                    <div class="service--icon"> <i class="fa fa-first-order"></i> </div>
+                    <div class="service--content">
+                        <h2><strong>Security & Data </strong>Protection</h2>
+                        <p>Implement secure authentication methods (OAuth, JWT, biometric authentication).<br>
+                            Ensure data encryption and secure API communication using SSL/TLS.<br>
+                            Follow GDPR, HIPAA, or other compliance standards.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="gallery">
+        <div class="container">
+            <div class="section--title">
+                <h2><strong>AWESOME WORKS</strong></h2>
+            </div>
+            <div class="gallery-filter-menu">
+                <ul>
+                    <li class="active"><a href="*" class="btn--default">ALL PROJECTS</a></li>
+                    <!-- <li class=""><a href="website-item" class="btn--default">WEBSITE</a></li> -->
+                    <!-- <li class=""><a href="application-item" class="btn--default">APPLICATION</a></li> -->
+                </ul>
+            </div>
+            <div class="row gallery-items" style="position: relative; height: 552.088px;">
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item"
+                    style="position: absolute; left: 0px; top: 0px;"> <img src="../images/large-img/school_connect.jpg"
+                        alt="" width="263" height="352">
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child">
+                                <h2>School Connect</h2>
+                                <p>It was built for TaTa ClassEdge</p><a href="#galleryDetails"
+                                    class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item logo-item"
+                    style="position: absolute; left: 242px; top: 0px;"> <img src="../images/large-img/sodexo-web.jpg"
+                        alt="" width="263" height="256"> <span class="gallery--case-study">CASE STUDY</span>
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child"> <a href="#postDetails" class="icon-link" data-toggle="modal"><i
+                                        class="icon fa fa-file-text-o"></i></a>
+                                <h2>Sodexo</h2>
+                                <p>Lorem ipsum dolor sit amet con sectetur adipiscing elit sed do.</p><a
+                                    href="#galleryDetails" class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="logo-item"
+                    style="position: absolute; left: 485px; top: 0px;"> <img
+                        src="../images/large-img/teacher_connect.jpg" alt="" width="263" height="352">
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child">
+                                <h2>Parent Connect</h2>
+                                <p>Lorem ipsum dolor sit amet con sectetur adipiscing elit sed do.</p><a
+                                    href="#galleryDetails" class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="logo-item application-item"
+                    style="position: absolute; left: 727px; top: 0px;"> <img src="../images/large-img/qiddle-mobile.jpg"
+                        alt="" width="263" height="256">
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child">
+                                <h2>qiddle</h2>
+                                <p>Developed a mobile application to connect moms and foster community engagement.</p><a
+                                    href="#galleryDetails" class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="application-item"
+                    style="position: absolute; left: 242px; top: 140px;"> <img src="../images/large-img/replad-web.jpg"
+                        alt="" width="263" height="352">
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child">
+                                <h2>Replad</h2>
+                                <p>This website helps them digitize their manual work.</p><a
+                                    href="#galleryDetails" class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="application-item illustation"
+                    style="position: absolute; left: 727px; top: 140px;"> <img
+                        src="../images/large-img/genencore-web.jpg" alt="" width="263" height="352">
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child">
+                                <h2>GenEncore</h2>
+                                <p>Developed a website for their organization to establish an online presence.</p><a
+                                    href="#galleryDetails" class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="illustation-item"
+                    style="position: absolute; left: 0px; top: 140px;"> <img src="../images/large-img/yowoto-web.jpg"
+                        alt="" width="263" height="256"> <span class="gallery--case-study">CASE STUDY</span>
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child"> <a href="#postDetails" class="icon-link" data-toggle="modal"><i
+                                        class="icon fa fa-file-text-o"></i></a>
+                                <h2>YOWOTO</h2>
+                                <p>Developed an e-commerce application designed to unite moms through a shared platform for connection, commerce, and community.</p><a
+                                    href="#galleryDetails" class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item"
+                    data-cat="illustation-item print-design-item" style="position: absolute; left: 485px; top: 140px;">
+                    <img src="../images/large-img/lego-web.jpg" alt="" width="263" height="249">
+                    <div class="gallery-overlay">
+                        <div class="vc--parent">
+                            <div class="vc--child">
+                                <h2>LEGO</h2>
+                                <p>Developed an application to display the available products.</p><a
+                                    href="#galleryDetails" class="btn gallery--window" data-toggle="modal">View
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade gallery--details" id="galleryDetails" role="dialog" style="display: none;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header"> <span class="close" data-dismiss="modal">×</span>
+                        <h4 class="modal-title">School Connect</h4>
+                        <p>#UI Design #Angular #Cordova #Firebase</p>
+                    </div>
+                    <div class="modal-body"> <img
+                            src="https://themelooks.us/demo/cvit/html/version-2/img/gallery-img/project-01@2x.jpg"
+                            alt="" width="0" height="0"> </div>
+                    <div class="modal-footer gallery--description">
+                        <p>Last time I created a full education mobile app for TataClassedge who planned to onboard
+                            their parent of schools.
+                            In that app, I</p>
+                        <p>And finally, I finished the design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="feedback" class="parallax-windowg" data-parallax="scroll" data-image-src="images/feedback-bg.jpg">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/school_connect.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Mobile app build for Parents</div>
-                            <div class="org-name">TATA ClassEdge</div>
+                <div class="col-md-4 feedback--faq">
+                    <h3 class="feedback--title">WHY ME?</h3>
+                    <div class="panel-group" id="feedbackA" role="tablist">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab"> <a href="#feedbackA01" data-toggle="collapse"
+                                    data-parent="#feedbackA">
+                                    <h4 class="panel-title">Why Choose Me?<i class="fa fa-minus"></i></h4>
+                                </a> </div>
+                            <div id="feedbackA01" class="panel-collapse collapse in" role="tabpanel">
+                                <div class="panel-body"> As a dedicated mobile app developer, I deliver top-notch,
+                                    user-friendly, and visually appealing apps tailored to your unique needs. My
+                                    attention to detail, commitment to quality, and excellent communication ensure your
+                                    vision becomes a reality. Let's create something amazing together! </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab"> <a href="#feedbackA02" class="collapsed"
+                                    data-toggle="collapse" data-parent="#feedbackA">
+                                    <h4 class="panel-title">Why Work with Me? <i class="fa fa-minus"></i></h4>
+                                </a> </div>
+                            <div id="feedbackA02" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body"> Choose me as your mobile app developer for unparalleled
+                                    expertise and commitment. I create innovative, user-centric apps that stand out.
+                                    With a focus on your vision, I ensure smooth communication and exceptional quality.
+                                    Let's build something extraordinary together! </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab"> <a href="#feedbackA03" class="collapsed"
+                                    data-toggle="collapse" data-parent="#feedbackA">
+                                    <h4 class="panel-title">Why Trust Me? <i class="fa fa-minus"></i></h4>
+                                </a> </div>
+                            <div id="feedbackA03" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body"> As a seasoned mobile app developer, I bring innovation,
+                                    precision, and reliability to every project. I build intuitive, visually appealing
+                                    apps that cater to your specific needs. My dedication to quality, clear
+                                    communication, and unwavering focus on your vision make me the ideal partner. Let's
+                                    create something extraordinary together! </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/teacher_connect.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Mobile app build for Teachers</div>
-                            <div class="org-name">TATA ClassEdge</div>
+                <div class="col-md-8 feedback--items">
+                    <h3 class="feedback--title">CLIENT'S FEEDBACK</h3>
+                    <div class="feedback--slider FeedbackSlider">
+                        <div>
+                            <div class="slider">
+                                <div class="owl-item" style="width: 720px;">
+                                    <div class="feedback--item" data-client-img="images/feedback/client-01.jpg"> <i
+                                            class="fa fa-quote-left"></i>
+                                        <p>Working with Satyapriya Subudhi has been a fantastic experience! He
+                                            developed a mobile app for our company that surpassed all our expectations.
+                                            The user interface is intuitive, the functionality is flawless, and the
+                                            performance is outstanding. Satyapriya Subudhi's professionalism and
+                                            attention to
+                                            detail were evident throughout the project. He understood our
+                                            vision perfectly and delivered a product that met all our needs. I highly
+                                            recommend Satyapriya Subudhi for any mobile app development project. Thank
+                                            you,
+                                            Satyapriya Subudhi, for your excellent work!</p><span class="cite">Jagdish
+                                            Adusumalli, Chief Architect</span>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 720px;">
+                                    <div class="feedback--item" data-client-img="images/feedback/client-02.jpg"> <i
+                                            class="fa fa-quote-left"></i>
+                                        <p>I highly recommend Satyapriya Subudhi as a mobile app developer. He
+                                            recently built an app for our company, and the entire experience was
+                                            outstanding. The app is user-friendly, visually appealing, and performs
+                                            flawlessly. Satyapriya Subudhi demonstrated impressive technical expertise
+                                            and a
+                                            keen eye for detail. Throughout the project, he was
+                                            communicative, responsive, and always willing to go the extra mile. It's
+                                            rare to find someone so dedicated and talented. If you need a top-quality
+                                            mobile app, Satyapriya Subudhi is the developer to trust..</p><span
+                                            class="cite">Prakash Sejwani, Senior Technical Architect </span>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/qiddle-web.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Web app build for moms</div>
-                            <div class="org-name">Freewave</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/qiddle-mobile.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Mobile app build for moms</div>
-                            <div class="org-name">Freewave</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/genencore-web.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Web app build genencore</div>
-                            <div class="org-name">Freewave</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/yowoto-web.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Web app build for yowoto</div>
-                            <div class="org-name">Freewave</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/sodexo-web.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description" title="Login screen and dashboard build for sodexo">Web + mobile app build for sodexo</div>
-                            <div class="org-name">Crest Infotech</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/lego-web.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Web app build for lego</div>
-                            <div class="org-name">Crest Infotech</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/lego-admin.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">dashboard for lego</div>
-                            <div class="org-name">Crest Infotech</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-wrap">
-                        <img src="images/replad-web.jpg">
-                        <div class="text-center desc-wrap">
-                            <div class="description">Web app build for replad</div>
-                            <div class="org-name">replad</div>
+                        <div class="">
+                            <div class="feedback-slider">
+                                <div class="owl-page"><span class=""><img src="images/feedback/client-01.jpg"></span>
+                                </div>
+                                <div class="owl-page active"><span class=""><img
+                                            src="images/feedback/client-02.jpg"></span></div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact-section" id="contact-me">
-        <div class="contact-content">
-            <!-- <div class="profile-pic">
-                <img src="images/profile.jpg">
-            </div> -->
-            <div class="phone">
-                <i class="fa fa-mobile"></i> +91 7738575140
-            </div>
-            <div class="email"> ssubudhi15@gmail.com</div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/satyapriya-subudhi-33345840/">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://www.facebook.com/satyapriya.subudhi">
-                    <i class="fa fa-facebook-square"></i>
-                </a>
-                <a href="https://twitter.com/ssubudhi15">
-                    <i class="fa fa-twitter-square"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- /container -->
-    <!-- <footer class="footer">
+    <div id="contact">
         <div class="container">
-            <p>&copy; 2016 Satyapriya Subudhi</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact--form">
+                        <div class="contact-form-status"></div>
+                        <form id="contactForm" action="https://getform.io/f/bdrnwjdb" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="contactName" class="form-control" placeholder="Name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="contactEmail" class="form-control" placeholder="Email"
+                                            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                            oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                                            oninput="this.setCustomValidity('')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="contactSubject" class="form-control" placeholder="Subject"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="contactMessage" class="form-control" rows="9" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <input type="submit" value="SEND" class="submit-btn btn--primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer> -->
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer--copyright">
+                <p>Copyright © 2024 <a href="#">Satyapriya Subudhi</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="backToTop"> <a href="#banner" class="btn--default AnimateScrollLink"><i class="fa fa-angle-up"></i></a>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $("a").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: false,
         });
-    });
+        $('.feedback-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            adaptiveHeight: true,
+            autoplay: false,
+        });
     </script>
     <script>
-    var windowHeight = window.innerHeight;
-    // $('.contact-section').css({ 'height': windowHeight })
-    $('.top-section').css({ 'height': windowHeight });
-    var lastScrollTop = 0;
-    $(window).scroll(function(event) {
-        var st = $(this).scrollTop();
-        if (st > lastScrollTop) {
-            // downscroll code
-            $('#navbar').css({ 'top': '-50px' });
-        } else {
-            // upscroll code
-            $('#navbar').css({ 'top': 0 });
-        }
-        lastScrollTop = st;
-    });
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
     </script>
+    <script>
+        var windowHeight = window.innerHeight;
+        // $('.contact-section').css({ 'height': windowHeight })
+        // $('.top-section').css({ 'height': windowHeight });
+        var lastScrollTop = 0;
+        $(window).scroll(function (event) {
+            var st = $(this).scrollTop();
+            console.log("scroll::", st, lastScrollTop)
+            if (st > lastScrollTop) {
+                // downscroll code
+                $('.header--navbar').css({ 'background': 'white' });
+                $('#backToTop').css({ 'opacity': '1' });
+            } else {
+                // upscroll code
+                $('.header--navbar').css({ 'background': 'transparent' });
+                $('#backToTop').css({ 'opacity': '0' });
+            }
+            lastScrollTop = st;
+        });
+    </script>
+    <script src="js/parallax.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            // Let HTML5 validation run first
+            if (!this.checkValidity()) return;
+
+            // Optional: slight delay to ensure form submits before resetting
+            setTimeout(() => {
+                this.reset();
+            }, 100);
+        });
+    </script>
+
 </body>
 
 </html>
